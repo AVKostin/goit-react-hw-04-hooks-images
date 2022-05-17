@@ -1,0 +1,80 @@
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+
+body {
+  animation-name: Opacity;
+  animation-duration: 700ms;
+  font-family: Roboto;
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  background-color: #fa807236;
+  position: relative;
+}
+
+$spinner-animation-speed: 400s;
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes Scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes Opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.info-item {
+  @media (max-width: 699px) {
+    font-size: 14px;
+  }
+  @media (max-width: 1199px) {
+    font-size: 16px;
+  }
+  font-size: 18px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  display: none;
+}
+
+input {
+  border: none;
+}
