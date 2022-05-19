@@ -8,6 +8,7 @@ import {
   Info,
   Comments,
 } from './ImageGalleryItem.styled';
+
 import {
   TiMessages,
   TiThumbsUp,
@@ -15,7 +16,7 @@ import {
   TiDownload,
 } from 'react-icons/ti';
 
-const ImageGalleryItem = ({
+export default function ImageGalleryItem({
   setInfoForModal,
   id,
   webformatURL,
@@ -25,7 +26,7 @@ const ImageGalleryItem = ({
   comments,
   downloads,
   largeImageURL,
-}) => {
+}) {
   const handleClick = () => {
     Loading.arrows({ svgSize: '120px' });
     setInfoForModal(largeImageURL, tags);
@@ -45,18 +46,21 @@ const ImageGalleryItem = ({
             </b>
             <Comments>{views}</Comments>
           </Info>
+
           <Info>
             <b>
               <TiThumbsUp size={26} color="#000000" />
             </b>
             <Comments> {likes}</Comments>
           </Info>
+
           <Info>
             <b>
               <TiDownload size={26} color="#000000" />
             </b>
             <Comments>{downloads}</Comments>
           </Info>
+
           <Info>
             <b>
               <TiMessages size={26} color="#000000" />
@@ -67,7 +71,7 @@ const ImageGalleryItem = ({
       </div>
     </ImageItem>
   );
-};
+}
 
 ImageGalleryItem.propTypes = {
   largeImageURL: PropTypes.string.isRequired,
@@ -80,5 +84,3 @@ ImageGalleryItem.propTypes = {
   comments: PropTypes.number.isRequired,
   downloads: PropTypes.number.isRequired,
 };
-
-export default ImageGalleryItem;
