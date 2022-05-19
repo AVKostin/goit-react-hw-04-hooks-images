@@ -18,7 +18,7 @@ export const ImageList = styled.ul`
   }
 
   @media screen and (min-width: 1280px) {
-    width: 100%;
+    width: 1200px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;
