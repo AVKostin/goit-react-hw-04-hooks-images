@@ -30,21 +30,23 @@ export default function Searchbar({ onSubmit }) {
   };
 
   return (
-    <Wrapper>
-      <Form onSubmit={handleSubmit} id="search-form">
-        <Input
-          type="text"
-          name="searchQuery"
-          autoComplete="off"
-          placeholder="Free Search Images By Name..."
-          value={query}
-          onChange={handleQueryChange}
-        />
-        <Button type="submit">
-          <BsSearch size={27} />
-        </Button>
-      </Form>
-    </Wrapper>
+    <header>
+      <Wrapper>
+        <Form onSubmit={handleSubmit} id="search-form">
+          <Input
+            type="text"
+            name="searchQuery"
+            autoComplete="off"
+            placeholder="Free Search Images By Name..."
+            value={query}
+            onChange={handleQueryChange}
+          />
+          <Button type="submit">
+            <BsSearch size={30} />
+          </Button>
+        </Form>
+      </Wrapper>
+    </header>
   );
 }
 
