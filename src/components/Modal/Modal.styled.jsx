@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Backdrop = styled.div`
   position: fixed;
@@ -22,16 +22,15 @@ export const ModalWindow = styled.div`
   width: 360px;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%) scale(1);
-  @media screen and (min-width: 600px) {
-    width: 600px;
+    @media screen and (min-width: 600px) {
+        width: 600px;
   }
-  @media screen and (min-width: 700px) {
-    width: 700px;
+    @media screen and (min-width: 700px) {
+        width: 700px;
   }
-  screen and (min-width: 1200px) {
-    width: 1200px;
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
   }
 `;
 
