@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ImageItem = styled.li`
   box-shadow: 0px 3px 5px -4px rgba(0, 0, 0, 1);
@@ -10,13 +10,12 @@ export const ImageItem = styled.li`
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  &:hover,
-  &:focus {
-    transform: scale(1.02);
-    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
-      0 2px 1px rgb(0 0 0 / 20%);
-    // box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
-  }
+    &:hover,
+    &:focus {
+        transform: scale(1.02);
+        box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
+        0 2px 1px rgb(0 0 0 / 20%);
+    }
 `;
 
 export const Image = styled.img`
@@ -36,12 +35,11 @@ export const ImageWrapper = styled.div`
 export const InfoWrapper = styled.div`
   padding-top: 10px;
   padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-    padding-right: 15px;
-    padding-left: 10px;
-}
 `;
 export const Info = styled.p`
   display: flex;
